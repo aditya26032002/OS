@@ -53,12 +53,12 @@ void size_allocator(int Arr[], int size)
 
 int main()
 {
-    int blockSize[] = {100, 500, 200, 300, 600};
-    int processSize[] = {212, 417, 112, 426};
-    int m = sizeof(blockSize) / sizeof(blockSize[0]);
-    int n = sizeof(processSize) / sizeof(processSize[0]);
+    int main_memory[] = {100, 500, 200, 300, 600};
+    int processes[] = {212, 417, 112, 426};
+    int size_main = sizeof(main_memory) / sizeof(main_memory[0]);
+    int size_process = sizeof(processes) / sizeof(processes[0]);
 
-    best_fit(blockSize, m, processSize, n);
+    best_fit(main_memory, size_main, processes, size_process);
 
     // int size_main, size_process;
 

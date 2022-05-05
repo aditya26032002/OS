@@ -30,10 +30,10 @@ void best_fit(int main_memory[], int size_main, int processes[], int size_proces
         }
     }
 
-    cout << "\nProcess No.\tProcess Size\tBlock no.\n";
+    cout << "Process No.\tProcess Size\tBlock no.\n";
     for (int i = 0; i < size_process; i++)
     {
-        cout << "   " << i+1 << "\t\t" << processes[i] << "\t\t";
+        cout << i+1 << "\t\t" << processes[i] << "\t\t";
         if (allocation[i] != -1)
             cout << allocation[i] + 1;
         else

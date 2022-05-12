@@ -7,9 +7,7 @@ int main(){
     int length_position = sizeof(position)/sizeof(position[0]);
     for(int i = 0; i<length_position; i++){
         temp = position[i] - current_position;
-        if(temp >=0){
-        }
-        else{
+        if(temp <0){
             temp = (-temp);
         }
         seek_time += temp;

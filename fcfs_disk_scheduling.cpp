@@ -3,7 +3,7 @@ using namespace std;
 //  = {82,170,43,140,24,16,190}
 int main()
 {
-    int num_processes, current_position = 50, seek_time = 0;
+    int num_processes, current_position, seek_time = 0;
     cout << "Enter number of processes : ";
     cin >> num_processes;
 
@@ -28,10 +28,10 @@ int main()
         current_position = position[i];
     }
     cout << "Seek time of individual processes are : ";
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < num_processes; i++)
     {
         cout << indiv_seek_time[i] << " ";
     }
-    cout << "\nSeek time = " << seek_time;
+    cout << "\nTotal seek time = " << seek_time;
     return 0;
 }

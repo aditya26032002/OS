@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//  = {82,170,43,140,24,16,190}
+// {82,170,43,140,24,16,190}
 int main()
 {
     int num_processes, current_position, seek_time = 0;
